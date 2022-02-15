@@ -5,22 +5,43 @@
 
 <head>
 	<title>Eventos app</title>
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
 	
-	<h1>
-	Cadastro de Eventos:
-	</h1>
-	<form method="post">
+	<h4>
+		Cadastro de Eventos:
+	</h4>
+	
+	<form class="container" method="post">
 		
 		Nome: <input type="text" value="" name="nome"/>
-		Local: <input type="text" value="" name="local"/>
-		Data: <input type="date" value="" name="data"/>
-		Horario: <input type="text" value="" name="horario"/>
+		<div class="row">
 		
-		<button type="submit"> Salvar </button>
+			<div class="input-field col s6">
+				Local: <input type="text" value="" name="local"/>
+			</div>
+			<div class="input-field col s3">
+				Data: <input type="date" value="" name="data"/>
+			</div>
+			<div class="input-field col s3">
+				Horario: <input type="text" value="" name="horario"/>
+			</div>
+			<div class="input-field col s3">
+			
+			</div>
 		
+		</div>
+		
+		<div>
+			<a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons right">list</i>Listar eventos</a>
+			<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">save</i> Salvar </button>
+		</div>
 	</form>
-
+	<!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
